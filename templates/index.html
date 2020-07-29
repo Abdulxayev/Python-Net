@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FORM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <form action="/" method='post'>
+        <input type="text" name="name" value="name" placeholder="Name">
+        <input name="Post Content" name='post'>
+        <input type="submit" value="Submit">
+    </form>
+    {% for post in posts %}
+    <div>{{ post[1] + ': ' post[2] }}</div>
+    {% endrof %}
+</body>
+
+</html>
